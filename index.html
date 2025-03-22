@@ -8,33 +8,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="bg-black p-3 shadow-md">
+    <nav role="navigation" class="bg-black p-3 shadow-md">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="text-white text-2xl font-semibold">
           Marivi | Doces Gourmet 🍫
         </div>
-
+    
         <div class="hidden md:flex space-x-6">
           <a
             href="/index.html"
-            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200"
-            >Loja</a
+            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200 flex items-center"
+            aria-label="Ir para a loja"
           >
+            Loja
+            <img
+              src="https://img.icons8.com/?size=100&id=80347&format=png&color=000000"
+              alt="Início"
+              class="ml-2 w-5 h-5"
+            />
+          </a>
           <a
             href="/sobre.html"
-            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200"
-            >Sobre</a
+            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200 flex items-center"
+            aria-label="Sobre nós"
           >
+            Sobre
+            <img
+              src="https://img.icons8.com/?size=100&id=8vsjJt13MQHk&format=png&color=000000"
+              alt="Sobre"
+              class="ml-2 w-5 h-5"
+            />
+          </a>
           <a
+            href="#contact"
+            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200 flex items-center"
             id="info-btn"
-            href="#"
-            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200"
-            >Informações</a
+            aria-label="Informações"
           >
+            Informações
+            <img
+              src="https://img.icons8.com/?size=100&id=VQOfeAx5KWTK&format=png&color=000000"
+              alt="Informações"
+              class="ml-2 w-5 h-5"
+            />
+          </a>
         </div>
-
+    
         <div class="md:hidden flex items-center">
-          <button id="hamburger-btn" class="text-white focus:outline-none">
+          <button id="hamburger-btn" class="text-white focus:outline-none" aria-label="Abrir menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -52,27 +73,49 @@
           </button>
         </div>
       </div>
-
+    
       <div
         id="mobile-menu"
         class="md:hidden bg-black text-white space-y-4 p-4 hidden"
+        aria-label="Menu móvel"
       >
         <a
           href="/index.html"
-          class="text-white px-3 py-2 rounded-md transition-colors duration-200"
-          >Loja</a
+          class="text-white px-3 py-2 rounded-md transition-colors duration-200 flex items-center"
+          aria-label="Ir para a loja"
         >
+          Loja
+          <img
+            src="https://img.icons8.com/?size=100&id=80347&format=png&color=000000"
+            alt="Início"
+            class="ml-2 w-5 h-5"
+          />
+        </a>
         <a
           href="/sobre.html"
-          class="block px-3 py-2 rounded-md transition-colors duration-200"
-          >Sobre</a
+          class="block px-3 py-2 rounded-md transition-colors duration-200 flex items-center"
+          aria-label="Sobre nós"
         >
+          Sobre
+          <img
+            src="https://img.icons8.com/?size=100&id=8vsjJt13MQHk&format=png&color=000000"
+            alt="Sobre"
+            class="ml-2 w-5 h-5"
+          />
+        </a>
         <a
+          href="#contact"
+          class="block px-3 py-2 rounded-md transition-colors duration-200 flex items-center"
+          aria-label="Informações"
           id="info-btn-mobile"
-          href="#"
-          class="block px-3 py-2 rounded-md transition-colors duration-200"
-          >Informações</a
         >
+          Informações
+          <img
+            src="https://img.icons8.com/?size=100&id=VQOfeAx5KWTK&format=png&color=000000"
+            alt="Informações"
+            class="ml-2 w-5 h-5"
+          />
+        </a>
       </div>
     </nav>
     <section class="py-20 bg-gray-100">
