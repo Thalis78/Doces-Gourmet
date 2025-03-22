@@ -14,7 +14,6 @@ body {
 
 .container {
   flex: 1;
-  padding-top: 70px;
 }
 .container.mx-auto.flex.flex-col.items-center.space-y-2.text-center {
   padding: 0px;
