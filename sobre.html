@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full">
+    <nav role="navigation" class="bg-black p-3 shadow-md">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-white text-2xl font-semibold">
+          Marivi | Doces Gourmet 🍫
+        </div>
+
+        <div class="hidden md:flex space-x-6">
+          <a
+            href="/index.html"
+            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200"
+            aria-label="Ir para a loja"
+            >Loja</a
+          >
+          <a
+            href="/sobre.html"
+            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200"
+            aria-label="Sobre nós"
+            >Sobre</a
+          >
+          <a
+            href="#contact"
+            class="text-white px-3 py-2 rounded-md hover:bg-white hover:text-black transition-colors duration-200"
+            id="info-btn"
+            aria-label="Informações"
+            >Informações</a
+          >
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button id="hamburger-btn" class="text-white focus:outline-none" aria-label="Abrir menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-black text-white space-y-4 p-4 hidden"
+        aria-label="Menu móvel"
+      >
+        <a
+          href="/index.html"
+          class="text-white px-3 py-2 rounded-md transition-colors duration-200"
+          aria-label="Ir para a loja"
+          >Loja</a
+        >
+        <a
+          href="/sobre.html"
+          class="block px-3 py-2 rounded-md transition-colors duration-200"
+          aria-label="Sobre nós"
+          >Sobre</a
+        >
+        <a
+          href="#contact"
+          class="block px-3 py-2 rounded-md transition-colors duration-200"
+          aria-label="Informações"
+          id="info-btn-mobile"
+          >Informações</a
+        >
+      </div>
+    </nav>
+
+    <section
+      id="about"
+      class="bg-gray-100 py-20 min-h-screen flex items-center justify-center"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center px-6 space-y-8 md:space-y-0"
+      >
+        <div class="md:w-1/2 flex justify-center">
+          <img
+            src="/img/imagem.jpeg"
+            alt="Foto da pessoa"
+            class="rounded-full w-72 h-72 object-cover shadow-lg"
+          />
+        </div>
+
+        <div class="md:w-1/2 text-center md:text-left space-y-4">
+          <h2 class="text-3xl font-bold text-black mb-6">Sobre a Marivi</h2>
+          <p class="text-lg text-gray-700">
+            Olá! Sou Thamires, e desde que me entendo por gente, a paixão por
+            doces me acompanha. Comecei a fazer bolos, tortas e chocolates para
+            minha família e amigos, até que a ideia de transformar minha paixão
+            em negócio surgiu. Cada doce que faço é feito com muito amor e
+            carinho, com ingredientes de qualidade para garantir que você tenha
+            a melhor experiência em cada mordida.
+          </p>
+          <p class="mt-4 text-lg text-gray-700">
+            A Marivi não é apenas uma loja de doces, é uma verdadeira
+            experiência de sabor, criatividade e carinho em cada receita. Nosso
+            objetivo é levar para você não só doces deliciosos, mas também a
+            emoção de saborear algo feito com verdadeira paixão.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="info-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden"
+    >
+      <div class="bg-white p-8 rounded-lg w-96 max-w-lg space-y-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">Informações</h2>
+
+        <div class="space-y-4">
+          <p class="text-gray-800">
+            <strong class="font-semibold">Formas de Pagamento:</strong>
+            <ul class="list-none pl-0 space-y-2">
+              <li class="flex items-center space-x-2">
+                <img
+                  src="https://img.icons8.com/?size=100&id=So9Gvu5Hcyjh&format=png&color=000000"
+                  alt="Cartão"
+                  class="w-6 h-6"
+                />
+                <span class="text-gray-700">Cartão de Crédito/Debito</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="https://img.icons8.com/?size=100&id=gjCwHrMX83X5&format=png&color=000000"
+                  alt="Pix"
+                  class="w-6 h-6"
+                />
+                <span class="text-gray-700">Pix</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="https://img.icons8.com/?size=100&id=p2scHNLP9nSb&format=png&color=000000"
+                  alt="Dinheiro"
+                  class="w-6 h-6"
+                />
+                <span class="text-gray-700">Dinheiro</span>
+              </li>
+            </ul>
+          </p>
+
+          <p class="text-gray-800">
+            <strong class="font-semibold">Redes Sociais:</strong>
+            <ul class="list-none pl-0 space-y-2">
+              <li class="flex items-center space-x-2">
+                <img
+                  src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
+                  alt="WhatsApp"
+                  class="w-6 h-6"
+                />
+                <a
+                  href="https://wa.me/558698604679"
+                  class="text-green-500 hover:text-green-600 transition-colors duration-200"
+                  >(86) 99860-4679</a
+                >
+              </li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+                  alt="Instagram"
+                  class="w-6 h-6"
+                />
+                <a
+                  href="https://www.instagram.com/marividocesgourmet/"
+                  class="text-purple-500 hover:text-purple-600 transition-colors duration-200"
+                  >marividocesgourmet</a
+                >
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="mt-6 text-right">
+          <button
+          id="close-modal-btn-info"
+          class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors duration-200"
+        >
+          Fechar
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-black text-white py-6">
+      <div
+        class="container mx-auto flex flex-col justify-center items-center text-center space-y-2"
+      >
+        <div class="flex items-center space-x-3">
+          <span class="text-2xl font-semibold transition-all duration-300">
+            Marivi | Doces Gourmet 🍫
+          </span>
+        </div>
+        <div class="mt-4 text-sm text-gray-300">
+          <p>2025. Todos os direitos reservados.</p>
+          <p>
+            Plataforma criada por
+            <span class="font-semibold transition-all duration-300"
+              >Thalisson Moura</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js">
+    </script>
+  </body>
+</html>
