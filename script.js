@@ -7,32 +7,26 @@ const closeModalBtnInfo = document.getElementById("close-modal-btn-info"); // Bo
 const closeModalBtnProduct = document.getElementById("close-modal-btn-product"); // Botão de fechar do modal de produto
 const productModal = document.getElementById("product-modal");
 
-// Toggle mobile menu visibility
 hamburgerBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-// Open info modal
 infoBtn.addEventListener("click", () => {
   infoModal.classList.remove("hidden");
 });
 
-// Open info modal (mobile version)
 infoBtnMobile.addEventListener("click", () => {
   infoModal.classList.remove("hidden");
 });
 
-// Close info modal
 closeModalBtnInfo.addEventListener("click", () => {
   infoModal.classList.add("hidden");
 });
 
-// Close product modal
 closeModalBtnProduct.addEventListener("click", () => {
   productModal.classList.add("hidden");
 });
 
-// Close mobile menu if clicked outside
 document.addEventListener("click", (event) => {
   if (
     !hamburgerBtn.contains(event.target) &&
