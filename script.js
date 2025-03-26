@@ -36,7 +36,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// Function to open product modal with details
 function openProductModal(name, description, price, imageUrl) {
   document.getElementById("product-name").textContent = name;
   document.getElementById("product-description").textContent = description;
